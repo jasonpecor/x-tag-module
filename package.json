@@ -1,0 +1,44 @@
+{
+  "name": "x-tag-module",
+  "version": "1.0.0",
+  "description": "ES6 module wrapper for x-tag Web Components",
+  "main": "dist/x-tag-module.js",
+	"scripts": {
+    "dist": "webpack && npm pack",
+    "test": "npm run dist && babel-tape-runner './test/**/*.spec.js' | faucet || true",
+    "watch": "watch-run -p 'src/**/*.js,src/**/*.less' npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonpecor/x-tag-module.git"
+  },
+  "keywords": [
+    "x-tag",
+    "web",
+    "components",
+    "es6",
+    "module"
+  ],
+  "author": "Jason Pecor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonpecor/x-tag-module/issues"
+  },
+  "homepage": "https://github.com/jasonpecor/x-tag-module#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-3": "^6.11.0",
+    "babel-register": "^6.9.0",
+    "babel-tape-runner": "^2.0.1",
+    "blue-tape": "^0.2.0",
+    "tape": "^4.6.0",
+    "webpack": "^1.13.1"
+  },
+  "peerDependencies": {
+    "x-tag": "1.x"
+  }
+}
