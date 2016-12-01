@@ -1,6 +1,6 @@
 {
   "name": "x-tag-module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ES6 module wrapper for x-tag Web Components",
   "main": "dist/x-tag-module.js",
 	"scripts": {
